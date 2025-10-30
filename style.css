@@ -1,9 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Pinyon+Script&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:500px
+  }
+  /* fazer o reset (denifir margem e padding como 0) sempre que likar o css */
+
+h1{
+  font-size: 65px;
+  font-family: Tinos;
+  color: white;
+  text-align: center;
+  border: 2.5px, solid, white;
+  padding: 20px 40px;
+}
+
+p {
+   text-align: justify;
+  text-indent: 20px; 
+  color: #5a4633;
+  font-family: Georgia, serif;
+  line-height: 1.8;
+  font-size: 18px;
+  margin: 20px 80px
+}
+
+p::before{
+  content: "~ "
+}
+
+.img-natureza{
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;                   
+    justify-content: center;         
+    align-items: center;
+  }
+
+
+.img-praia{
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/praia.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;                  
+  justify-content: center;         
+  align-items: center;
+}
+
+.img-montanha{
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/montanha.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;                   /* método moderno e simples */
+  justify-content: center;         /* centraliza horizontalmente */
+  align-items: center;
+}
+
+
+.img-floresta{
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/floresta.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;                  
+  justify-content: center;         
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #topo {
@@ -11,132 +91,23 @@
   bottom: 20px;
   right: 20px;
   background-color: #333;
-  color: white;
   border: none;
   border-radius: 8px;
-  padding: 8px 12px;
-  font-size: 20px;
+  padding: 10px;
   cursor: pointer;
-  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 #topo:hover {
   background-color: #555;
+  transform: translateY(-2px);
 }
 
-h1 {
-  font-family: 'Georgia', serif;
-  font-size: 3rem;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border: 2px solid white;
-  padding: 5px 20px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  display: inline-block;
+#topo svg {
+  display: block;
 }
-
-p {
-  text-align: justify;
-  text-indent: 20px; 
-  color: #5a4633;
-  font-family: Georgia, serif;
-  line-height: 1.8;
-  font-size: 18px;
-  margin: 20px 80px;
-}
-
-.img-1{
-    color: white;
-
-    font-size: large;
-    text-align: center;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../assets/explore.jpg");
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 230px;
-
-}
-
-.texto{
-  padding: 60px 20px;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-  }
-
-.img-2{
-    color: white;
-    font-size: large;
-    text-align: center;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../assets/praia.jpg");
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 230px;
-
-}
-
-.texto{
-  padding: 60px 20px;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-  }
-
-.img-3{
-    color: white;
-    font-size: large;
-    text-align: center;
-    background-image: 
-     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-     url("../assets/montanha.jpg");
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 230px;
-
-}
-
-.texto{
-  padding: 60px 20px;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-  }
-
-.texto{
-  padding: 60px 20px;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-  }
-
-.img-4{
-    color: white;
-    font-size: large;
-    text-align: center;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../assets/floresta.jpg");
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 230px;
-
-}
-
-.texto{
-  padding: 60px 20px;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-  }
-
- 
